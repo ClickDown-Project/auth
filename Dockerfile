@@ -1,9 +1,7 @@
 # syntax=docker/dockerfile:1
-FROM node:14.16
+FROM node:14.16-alpine
 
 WORKDIR /auth
-
-COPY ["package.json", "yarn.lock", "./auth/"]
 
 COPY . /auth
 
